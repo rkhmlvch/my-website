@@ -32,6 +32,28 @@ li {
   font-size: 3rem;
 }
 
+.ring-container {
+  position: relative;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #62bd19;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 23px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .shape {
   background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
   animation: morph 8s ease-in-out infinite;
