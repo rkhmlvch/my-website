@@ -42,7 +42,7 @@
         </p>
         <div class="d-flex flex-row mt-5">
 
-          <div style="flex: 1">
+          <div class="flex-shrink-0" style="flex: 1">
             <p><b>My Links</b></p>
             <ul style="list-style-type: none; padding: 0px">
               <li class="mb-2">
@@ -101,7 +101,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex-shrink-0" style="flex: 2">
+          <div class="flex-shrink-1" style="flex: 2">
             <p><b>Email Me</b></p>
             <p> <a class="link-dark" href="mailto:rkhmlvch@vivaldi.net">rkhmlvch@vivaldi.net</a> </p>
             <p><b>Lorem Ipsum</b></p>
@@ -111,46 +111,28 @@
           </div>
         </div>
       </div>
-
-      <div class="col-lg-6 d-flex justify-content-center align-items-start">
-        <!-- Contact Component -->
-        <div class="row justify-content-lg-center mb-3">
-          <div>
-            <div class="bg-white border rounded shadow-sm overflow-hidden">
-              <form action="#!">
-                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                  <div class="col-12">
-                    <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="fullname" name="fullname" value="" required />
-                  </div>
-                  <div class="col-12">
-                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-envelope" viewBox="0 0 16 16">
-                          <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                        </svg>
-                      </span>
-                      <input type="email" class="form-control" id="email" name="email" value="" required />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                  </div>
-                  <div class="col-12">
-                    <div class="d-grid">
-                      <button class="btn btn-dark btn-lg" type="submit">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
+      <!-- Contact Component -->  
+      
+      <div class="col-lg-5 ">
+        <div class="row bg-white border border-dark rounded overflow-hidden py-3 justify-content-lg-center mb-3">
+          <form id="contactForm">
+            <div class="row gy-2 px-2">
+              <div class="pb-2">
+                <input placeholder="Enter your full name" type="text" class="form-control rounded-0 border-0 border-bottom border-dark" id="fullname" name="fullname"
+                  value="" required />
+              </div>
+              <div class="pb-4">
+                <textarea placeholder="What would you like to inquire?" class="form-control  border-dark" id="message" name="message"
+                  rows="3" required></textarea>
+              </div>
+              <div>
+                <div class="d-grid">
+                  <button class="btn btn-dark btn-lg" type="submit">Submit</button>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
+          </form>
+          <a href="#" id="mailtoLink" style="display: none;">Open Mail Client</a>
         </div>
       </div>
     </div>
@@ -191,6 +173,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
