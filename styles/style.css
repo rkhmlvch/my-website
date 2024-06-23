@@ -15,6 +15,11 @@ li {
   font-weight: 400 !important;
 }
 
+svg {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+
 strong {
   font-weight: 600 !important;
 }
@@ -23,6 +28,11 @@ strong {
   justify-content: space-between;
   font-weight: 600 !important;
 }
+
+.active {
+  font-weight: 700 !important;
+}
+
 .menu {
   border-bottom: 1px solid lightgrey;
 }
