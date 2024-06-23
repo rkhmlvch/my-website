@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const subject = `Contact Form Submission from ${fullname}`;
       const body = `${message}`;
 
-      const mailtoLink = `mailto:someone@example.com?subject=${encodeURIComponent(
+      const mailtoLink = `mailto:rkhmlvch@pm.me?subject=${encodeURIComponent(
         subject
       )}&body=${encodeURIComponent(body)}`;
 
