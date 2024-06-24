@@ -1,11 +1,10 @@
 # My Website
 
-My website is hosted on Netlify at [rkhmlvch/my-website](https://rkhmlvch.netlify.app)
+My website is hosted on [Netlify](https://rkhmlvch.netlify.app)
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
 - [Contact](#contact)
 
 ## Overview
